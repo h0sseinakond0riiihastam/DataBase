@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:divider="@android:color/darker_gray"
+        android:showDividers="middle"
+        android:dividerPadding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="عنوان را وارد کنید"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/ed"/>
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="توضیحات را وارد کنید "
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ed"/>
+
+            <android.widget.Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ذخیره"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_black"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <android.widget.Button
+                android:id="@+id/buttonShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نمایش رکورد ها"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_black"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="16dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="0dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextDeleteId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ای دی رکوردی که میخواهید حذف شود را وارد کنید"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ed"/>
+
+            <android.widget.Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حذف رکورد"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_black"/>
+        </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"
+    android:layout_marginTop="24dp"/>
+        <EditText
+            android:id="@+id/editTextUpdateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ای دی رکوردی که میخواهید آپدیت شود را وارد کنید"
+            android:inputType="number"
+            android:minHeight="48dp"
+
+            android:padding="8dp"
+            android:background="@drawable/ed"/>
+
+        <android.widget.Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="آپدیت رکورد"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_black"
+            android:layout_marginTop="8dp"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
